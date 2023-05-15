@@ -29,4 +29,3 @@ class Figma extends GetxController {
     return Figma2Flutter(context);
   }
 }
-

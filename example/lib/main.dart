@@ -32,9 +32,6 @@ class HomeView extends StatefulWidget {
 }
 
 class _HomeViewState extends State<HomeView> {
-
-
-  
   Color textColor = const Color(0xFF242424);
   @override
   Widget build(BuildContext context) {
@@ -100,7 +97,7 @@ class _HomeViewState extends State<HomeView> {
                             fontSize: 15,
                             color: textColor.withOpacity(0.4),
                             fontWeight: FontWeight.w400),
-                            contentPadding: figma.paddingOnly(left: 16),
+                        contentPadding: figma.paddingOnly(left: 16),
                         border: InputBorder.none,
                         suffixIcon: Icon(
                           Icons.search,
