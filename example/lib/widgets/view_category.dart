@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// ignore: depend_on_referenced_packages
 import 'package:figma_to_flutter/figma_to_flutter.dart';
 
 class ViewCategory extends StatelessWidget {
