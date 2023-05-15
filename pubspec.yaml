@@ -1,7 +1,7 @@
 name: figma_to_flutter
 description: Easily transform Figma designs into Flutter codes. Carry over your Figma designs to Flutter coding space with same values responding in Flutter.
 version: 0.0.1
-homepage:
+homepage: https://github.com/FlutterWay/figma_to_flutter
 
 environment:
   sdk: '>=2.19.6 <3.0.0'
