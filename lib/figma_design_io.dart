@@ -84,8 +84,8 @@ class Figma2Flutter {
     double? decorationThickness,
     TextOverflow? overflow,
   }) {
-    return googleFont != null
-        ? GoogleFonts.getFont(googleFont,
+    return googleFont != null || Figma.instance.defaultFontFamily != null
+        ? GoogleFonts.getFont(googleFont ?? Figma.instance.defaultFontFamily!,
             color: color,
             backgroundColor: backgroundColor,
             fontSize: fontSize,

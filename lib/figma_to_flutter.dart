@@ -16,13 +16,17 @@ class Figma extends GetxController {
   double get deviceWidth => _deviceWidth;
   double get deviceHeight => _deviceHeight;
 
-  Figma(this._deviceWidth, this._deviceHeight);
+  String? defaultFontFamily;
+
+  Figma(this._deviceWidth, this._deviceHeight, this.defaultFontFamily);
 
   static Figma get instance => Get.find<Figma>();
 
   static void setup(
-      {required double deviceWidth, required double deviceHeight}) {
-    Get.put(Figma(deviceWidth, deviceHeight));
+      {required double deviceWidth,
+      required double deviceHeight,
+      String? defaultFontFamily}) {
+    Get.put(Figma(deviceWidth, deviceHeight, defaultFontFamily));
   }
 
   static Figma2Flutter of(BuildContext context) {
