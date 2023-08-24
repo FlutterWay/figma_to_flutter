@@ -86,10 +86,10 @@ class Figma2Flutter {
   }) {
     return googleFont != null || Figma.instance.defaultFontFamily != null
         ? GoogleFonts.getFont(googleFont ?? Figma.instance.defaultFontFamily!,
-            color: color,
+            color: color ?? Figma.instance.defaultTextColor,
             backgroundColor: backgroundColor,
             fontSize: fontSize,
-            fontWeight: fontWeight,
+            fontWeight: fontWeight ?? Figma.instance.defaultFontWeight,
             fontStyle: fontStyle,
             letterSpacing: letterSpacing,
             wordSpacing: wordSpacing,

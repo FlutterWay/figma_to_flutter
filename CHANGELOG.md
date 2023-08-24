@@ -9,3 +9,7 @@
 ## 0.0.3
 
 * defaultFontFamily added
+
+## 0.0.4
+
+* defaultFontWeight and defaultTextColor added
