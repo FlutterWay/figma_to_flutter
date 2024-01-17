@@ -106,7 +106,7 @@ class Figma2Flutter {
             decorationThickness: decorationThickness)
         : TextStyle(
             color: color,
-            fontFamily: fontFamily,
+            fontFamily: Figma.instance.defaultCustomFontFamily ?? fontFamily,
             backgroundColor: backgroundColor,
             fontSize: fontSize,
             fontWeight: fontWeight,
