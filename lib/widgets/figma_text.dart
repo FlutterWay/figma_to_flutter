@@ -13,12 +13,12 @@ class FigmaText extends StatelessWidget {
   final TextDirection? textDirection;
   final Locale? locale;
   final bool? softWrap;
-  final double? textScaleFactor;
   final String? semanticsLabel;
   final TextWidthBasis? textWidthBasis;
   final TextHeightBehavior? textHeightBehavior;
   final Color? selectionColor;
   final AlignmentGeometry alignment;
+  final TextScaler? textScaler;
   const FigmaText(
     this.text, {
     required this.height,
@@ -33,7 +33,7 @@ class FigmaText extends StatelessWidget {
     this.textDirection,
     this.locale,
     this.softWrap,
-    this.textScaleFactor,
+    this.textScaler,
     this.semanticsLabel,
     this.textWidthBasis,
     this.textHeightBehavior,
@@ -58,7 +58,7 @@ class FigmaText extends StatelessWidget {
           strutStyle: strutStyle,
           textDirection: textDirection,
           locale: locale,
-          textScaleFactor: textScaleFactor,
+          textScaler: textScaler,
           semanticsLabel: semanticsLabel,
           textWidthBasis: textWidthBasis,
           textHeightBehavior: textHeightBehavior,

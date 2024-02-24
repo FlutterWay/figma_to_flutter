@@ -17,3 +17,7 @@
 ## 0.0.5
 
 * defaultCustomFontFamily added
+
+## 0.0.6
+
+* packages updated
